@@ -1,0 +1,53 @@
+---
+title: "Teoria da Firma"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Função de Custo
+
+### Custo das empresas no curto prazo 
+
+$$\Pi_{t+1} = \sum w_{i} + \frac{C(I)}{T_{t}} + CV + CF + \varepsilon$$
+
+$$\begin{cases} \sum w_{i}\left(1 - \bar{\rho}\right) \le \frac{\sum w_{i}}{2} & \text{possível eficiencia} \\ \sum w_{i}\left(1 - \bar{\rho}\right) > \frac{\sum w_{i}}{2} & \text{ineficiência} \end{cases}$$
+
+Sendo $\sum w_{i}$ o somatório dos salários; $\bar{\rho}$ o parâmetro de produtividade média dos funcionários; $\frac{C(I)}{T_{t}}$ o custo do investimento inicial para entrar no mercado dividido pelo tempo total de pagamento; $CV$ os custos variávies; $CF$ os custos fixos e $\varepsilon$ o termo de erro correspondente aos imprevistos. Quanto a produtividade individual ($\rho_{i}$), temos:
+
+$$\rho_{i} = \left( \frac{H^{m}_{i}}{T^{m}} \right) \times \left( \frac{R^{m}_{i}}{M^{m}} \right)$$
+e:
+
+$$\bar{\rho} = \frac{\sum{\rho_{i}}}{n}$$
+Sendo $\frac{H^{m}_{i}}{T^{m}}$ as horas mensais trabalhadas do empregado $i$ em relação às horas mensais estabelecidas no contrato e $\frac{R^{m}_{i}}{M^{m}}$ o resultado do desempenho mensal do empregado $i$ em relação às metas mensais estabelecidas pela empresa.
+
+### Custo da empresa no longo prazo
+
+$$\Pi_{t+2} = \sum w_{i} + f_{c}(x,y) + C(D) + CV + CF + \varepsilon$$
+
+Sendo $C(D)$ os custos de divulgação da empresa (marketing e afins) e $f_{c}(x,y)$ uma função de investimento em P&D representada por:
+
+$$f(x,y) = \frac{x}{T} + y$$
+
+Onde $x$ equivale ao investimento na expansão de pesquisa e $y$ o investimento mensal gasto em pesquisa.
+
+## Função Receita (curto e longo prazo)
+
+Função receita clássica. Relação entre preço e quantidade.
+
+$$\Gamma_{t1, t2} = Q \times P_{\bar{\pi}}$$
+
+Entretanto, o preço está relacionado com a preferência do consumidor local em relação ao estabelecimento. Sendo assim, o preço base é relacionado com a média de consideração dos consumidores (mono 3)
+
+$$\Gamma_{t1, t2} = \left[\left( Q_{1} \right) \times \left( P^{b}_{1}\left(1 + \bar{\pi} \right)\right)\right] + \left[\left( Q_{2} \right) \times \left( P^{b}_{2}\left(1 + \bar{\pi} \right)\right)\right] + \dots + \left[\left( Q_{n} \right) \times \left( P^{n}_{1}\left(1 + \bar{\pi} \right)\right)\right]$$
+Sendo $\pi_{i}$ correspondendo a:
+
+$$\pi_{i} = \left(\gamma^{1}_{1} \right) \left[ \left( \alpha^{n}_{e_{n}} \right) \left(\frac{\beta_{1}}{24} \right) \left( 1 - \frac{\Psi E^{n}_{w_{n}} - \Psi_{n}}{At_{n_{}}} \right) \right] + \left(\gamma^{2}_{1} \right) \left[ \left( \alpha^{n}_{e_{n}} \right) \left(\frac{\beta_{2}}{24} \right) \left( 1 - \frac{\Psi E^{n}_{w_{n}} - \Psi_{n}}{At_{n_{}}} \right) \right] + \dots + \left(\gamma^{\text{indivíduo}}_{\text{estabelecimento}} \right) \left[ \left( \alpha^{n}_{e_{n}} \right) \left(\frac{\beta_{n}}{24} \right) \left( 1 - \frac{\Psi E^{n}_{w_{n}} - \Psi_{n}}{At_{n_{}}} \right) \right]$$
+
+## Função Lucro
+
+Sendo o lucro a simples relação entre as receitas mensais e os custos mensais:
+
+$$\Xi = \Gamma_{t1, t2} - \Pi_{t1, t2}$$
